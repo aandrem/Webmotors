@@ -1,0 +1,828 @@
+{
+    "info": {
+        "_postman_id": "caaa7b36-2896-44fd-b312-947777b875ea",
+        "name": "Swagger Webmotors",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "api",
+            "item": [
+                {
+                    "name": "Online Challenge",
+                    "item": [
+                        {
+                            "name": "API para recuperar marcas cadastradas na webmotors",
+                            "id": "2192ee17-264a-4f0f-8049-435fbe214e58",
+                            "protocolProfileBehavior": {
+                                "disableBodyPruning": true
+                            },
+                            "request": {
+                                "method": "GET",
+                                "header": [],
+                                "url": {
+                                    "raw": "{{baseUrl}}/api/OnlineChallenge/Make?=",
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "path": [
+                                        "api",
+                                        "OnlineChallenge",
+                                        "Make"
+                                    ],
+                                    "query": [
+                                        {
+                                            "key": null,
+                                            "value": "",
+                                            "type": "text"
+                                        }
+                                    ]
+                                },
+                                "description": "JSON retorno para leitura"
+                            },
+                            "response": [
+                                {
+                                    "id": "33f25652-dade-4d0c-ab1b-64a872b93b5b",
+                                    "name": "HTTP OK",
+                                    "originalRequest": {
+                                        "method": "GET",
+                                        "header": [],
+                                        "url": {
+                                            "raw": "{{baseUrl}}/api/OnlineChallenge/Make",
+                                            "host": [
+                                                "{{baseUrl}}"
+                                            ],
+                                            "path": [
+                                                "api",
+                                                "OnlineChallenge",
+                                                "Make"
+                                            ]
+                                        }
+                                    },
+                                    "status": "OK",
+                                    "code": 200,
+                                    "_postman_previewlanguage": "json",
+                                    "header": [
+                                        {
+                                            "key": "Content-Type",
+                                            "value": "application/json"
+                                        }
+                                    ],
+                                    "cookie": [],
+                                    "responseTime": null,
+                                    "body": "{\n \"Email\": \"in \",\n \"Password\": \"consequat ullamco aliqua\",\n \"ConfirmPassword\": \"dolore in\"\n}"
+                                },
+                                {
+                                    "id": "9157ff43-7fb1-4138-9d20-aaa05b34ba57",
+                                    "name": "Internal Server Error",
+                                    "originalRequest": {
+                                        "method": "GET",
+                                        "header": [],
+                                        "url": {
+                                            "raw": "{{baseUrl}}/api/OnlineChallenge/Make",
+                                            "host": [
+                                                "{{baseUrl}}"
+                                            ],
+                                            "path": [
+                                                "api",
+                                                "OnlineChallenge",
+                                                "Make"
+                                            ]
+                                        }
+                                    },
+                                    "status": "Internal Server Error",
+                                    "code": 500,
+                                    "_postman_previewlanguage": "text",
+                                    "header": [
+                                        {
+                                            "key": "Content-Type",
+                                            "value": "text/plain"
+                                        }
+                                    ],
+                                    "cookie": [],
+                                    "responseTime": null,
+                                    "body": ""
+                                }
+                            ]
+                        },
+                        {
+                            "name": "API para recuperar modelos cadastradas na webmotors da marca honda (id2)",
+                            "id": "b3df62b8-a103-4a0c-be16-f1d5b9e8d234",
+                            "protocolProfileBehavior": {
+                                "disableBodyPruning": true
+                            },
+                            "request": {
+                                "method": "GET",
+                                "header": [],
+                                "url": {
+                                    "raw": "{{baseUrl}}/api/OnlineChallenge/Model?MakeID=2",
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "path": [
+                                        "api",
+                                        "OnlineChallenge",
+                                        "Model"
+                                    ],
+                                    "query": [
+                                        {
+                                            "key": "MakeID",
+                                            "value": "2",
+                                            "description": "(Required) "
+                                        }
+                                    ]
+                                },
+                                "description": "JSON retorno para leitura"
+                            },
+                            "response": [
+                                {
+                                    "id": "22eda25d-7d5d-4ce5-a418-dca98b76a4da",
+                                    "name": "HTTP OK",
+                                    "originalRequest": {
+                                        "method": "GET",
+                                        "header": [],
+                                        "url": {
+                                            "raw": "{{baseUrl}}/api/OnlineChallenge/Model?MakeID=-86967892",
+                                            "host": [
+                                                "{{baseUrl}}"
+                                            ],
+                                            "path": [
+                                                "api",
+                                                "OnlineChallenge",
+                                                "Model"
+                                            ],
+                                            "query": [
+                                                {
+                                                    "key": "MakeID",
+                                                    "value": "-86967892"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    "status": "OK",
+                                    "code": 200,
+                                    "_postman_previewlanguage": "json",
+                                    "header": [
+                                        {
+                                            "key": "Content-Type",
+                                            "value": "application/json"
+                                        }
+                                    ],
+                                    "cookie": [],
+                                    "responseTime": null,
+                                    "body": "{\n \"Email\": \"in \",\n \"Password\": \"consequat ullamco aliqua\",\n \"ConfirmPassword\": \"dolore in\"\n}"
+                                },
+                                {
+                                    "id": "f4288c21-78ed-482b-aba1-d778a7a12552",
+                                    "name": "Internal Server Error",
+                                    "originalRequest": {
+                                        "method": "GET",
+                                        "header": [],
+                                        "url": {
+                                            "raw": "{{baseUrl}}/api/OnlineChallenge/Model?MakeID=-86967892",
+                                            "host": [
+                                                "{{baseUrl}}"
+                                            ],
+                                            "path": [
+                                                "api",
+                                                "OnlineChallenge",
+                                                "Model"
+                                            ],
+                                            "query": [
+                                                {
+                                                    "key": "MakeID",
+                                                    "value": "-86967892"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    "status": "Internal Server Error",
+                                    "code": 500,
+                                    "_postman_previewlanguage": "text",
+                                    "header": [
+                                        {
+                                            "key": "Content-Type",
+                                            "value": "text/plain"
+                                        }
+                                    ],
+                                    "cookie": [],
+                                    "responseTime": null,
+                                    "body": ""
+                                }
+                            ]
+                        },
+                        {
+                            "name": "API para recuperar versões cadastradas na webmotors modelo crv (id4)",
+                            "id": "a10b4e7a-0174-4be4-ae73-66d6978b6fef",
+                            "protocolProfileBehavior": {
+                                "disableBodyPruning": true
+                            },
+                            "request": {
+                                "method": "GET",
+                                "header": [],
+                                "url": {
+                                    "raw": "{{baseUrl}}/api/OnlineChallenge/Version?ModelID=4",
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "path": [
+                                        "api",
+                                        "OnlineChallenge",
+                                        "Version"
+                                    ],
+                                    "query": [
+                                        {
+                                            "key": "ModelID",
+                                            "value": "4",
+                                            "description": "(Required) Codigo do Modelo"
+                                        }
+                                    ]
+                                },
+                                "description": "JSON retorno para leitura"
+                            },
+                            "response": [
+                                {
+                                    "id": "3bc87998-cec7-43ec-952b-1f52bc53bff1",
+                                    "name": "HTTP OK",
+                                    "originalRequest": {
+                                        "method": "GET",
+                                        "header": [],
+                                        "url": {
+                                            "raw": "{{baseUrl}}/api/OnlineChallenge/Version?ModelID=-86967892",
+                                            "host": [
+                                                "{{baseUrl}}"
+                                            ],
+                                            "path": [
+                                                "api",
+                                                "OnlineChallenge",
+                                                "Version"
+                                            ],
+                                            "query": [
+                                                {
+                                                    "key": "ModelID",
+                                                    "value": "-86967892"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    "status": "OK",
+                                    "code": 200,
+                                    "_postman_previewlanguage": "json",
+                                    "header": [
+                                        {
+                                            "key": "Content-Type",
+                                            "value": "application/json"
+                                        }
+                                    ],
+                                    "cookie": [],
+                                    "responseTime": null,
+                                    "body": "{\n \"Email\": \"in \",\n \"Password\": \"consequat ullamco aliqua\",\n \"ConfirmPassword\": \"dolore in\"\n}"
+                                },
+                                {
+                                    "id": "b93ec31a-c17e-482b-8dd8-dd6c6d020c0e",
+                                    "name": "Internal Server Error",
+                                    "originalRequest": {
+                                        "method": "GET",
+                                        "header": [],
+                                        "url": {
+                                            "raw": "{{baseUrl}}/api/OnlineChallenge/Version?ModelID=-86967892",
+                                            "host": [
+                                                "{{baseUrl}}"
+                                            ],
+                                            "path": [
+                                                "api",
+                                                "OnlineChallenge",
+                                                "Version"
+                                            ],
+                                            "query": [
+                                                {
+                                                    "key": "ModelID",
+                                                    "value": "-86967892"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    "status": "Internal Server Error",
+                                    "code": 500,
+                                    "_postman_previewlanguage": "text",
+                                    "header": [
+                                        {
+                                            "key": "Content-Type",
+                                            "value": "text/plain"
+                                        }
+                                    ],
+                                    "cookie": [],
+                                    "responseTime": null,
+                                    "body": ""
+                                }
+                            ]
+                        },
+                        {
+                            "name": "API para recuperar versões cadastradas na webmotors",
+                            "id": "e39abdd6-59f4-4609-a22f-6b3f6905354d",
+                            "protocolProfileBehavior": {
+                                "disableBodyPruning": true
+                            },
+                            "request": {
+                                "method": "GET",
+                                "header": [],
+                                "url": {
+                                    "raw": "{{baseUrl}}/api/OnlineChallenge/Vehicles?Page=1",
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "path": [
+                                        "api",
+                                        "OnlineChallenge",
+                                        "Vehicles"
+                                    ],
+                                    "query": [
+                                        {
+                                            "key": "Page",
+                                            "value": "1",
+                                            "description": "(Required) Codigo do Modelo"
+                                        }
+                                    ]
+                                },
+                                "description": "JSON retorno para leitura"
+                            },
+                            "response": [
+                                {
+                                    "id": "b31ffe04-d30c-4c69-8f0d-1011a4dee987",
+                                    "name": "HTTP OK",
+                                    "originalRequest": {
+                                        "method": "GET",
+                                        "header": [],
+                                        "url": {
+                                            "raw": "{{baseUrl}}/api/OnlineChallenge/Vehicles?Page=-86967892",
+                                            "host": [
+                                                "{{baseUrl}}"
+                                            ],
+                                            "path": [
+                                                "api",
+                                                "OnlineChallenge",
+                                                "Vehicles"
+                                            ],
+                                            "query": [
+                                                {
+                                                    "key": "Page",
+                                                    "value": "-86967892"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    "status": "OK",
+                                    "code": 200,
+                                    "_postman_previewlanguage": "json",
+                                    "header": [
+                                        {
+                                            "key": "Content-Type",
+                                            "value": "application/json"
+                                        }
+                                    ],
+                                    "cookie": [],
+                                    "responseTime": null,
+                                    "body": "{\n \"Email\": \"in \",\n \"Password\": \"consequat ullamco aliqua\",\n \"ConfirmPassword\": \"dolore in\"\n}"
+                                },
+                                {
+                                    "id": "4e2eb468-fd46-4ebb-bbe0-70fd2a93fc8f",
+                                    "name": "Internal Server Error",
+                                    "originalRequest": {
+                                        "method": "GET",
+                                        "header": [],
+                                        "url": {
+                                            "raw": "{{baseUrl}}/api/OnlineChallenge/Vehicles?Page=-86967892",
+                                            "host": [
+                                                "{{baseUrl}}"
+                                            ],
+                                            "path": [
+                                                "api",
+                                                "OnlineChallenge",
+                                                "Vehicles"
+                                            ],
+                                            "query": [
+                                                {
+                                                    "key": "Page",
+                                                    "value": "-86967892"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    "status": "Internal Server Error",
+                                    "code": 500,
+                                    "_postman_previewlanguage": "text",
+                                    "header": [
+                                        {
+                                            "key": "Content-Type",
+                                            "value": "text/plain"
+                                        }
+                                    ],
+                                    "cookie": [],
+                                    "responseTime": null,
+                                    "body": ""
+                                }
+                            ]
+                        }
+                    ],
+                    "id": "07ffc869-ee70-41a5-ba96-f58dfed2bc7f"
+                },
+                {
+                    "name": "Values",
+                    "item": [
+                        {
+                            "name": "{id}",
+                            "item": [
+                                {
+                                    "name": "Values Get",
+                                    "id": "7e5cfae1-d8d9-414a-945d-a6b56c6ca0fc",
+                                    "request": {
+                                        "method": "GET",
+                                        "header": [],
+                                        "url": {
+                                            "raw": "{{baseUrl}}/api/Values/:id",
+                                            "host": [
+                                                "{{baseUrl}}"
+                                            ],
+                                            "path": [
+                                                "api",
+                                                "Values",
+                                                ":id"
+                                            ],
+                                            "variable": [
+                                                {
+                                                    "id": "bdb0a0eb-a74e-4932-9fb5-0e8af22ff136",
+                                                    "key": "id",
+                                                    "value": "-86967892",
+                                                    "description": "(Required) "
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    "response": [
+                                        {
+                                            "id": "9e2d21a4-612c-44d0-ba1a-4e6b27a8b8c3",
+                                            "name": "OK",
+                                            "originalRequest": {
+                                                "method": "GET",
+                                                "header": [],
+                                                "url": {
+                                                    "raw": "{{baseUrl}}/api/Values/:id",
+                                                    "host": [
+                                                        "{{baseUrl}}"
+                                                    ],
+                                                    "path": [
+                                                        "api",
+                                                        "Values",
+                                                        ":id"
+                                                    ],
+                                                    "variable": [
+                                                        {
+                                                            "key": "id",
+                                                            "value": "-86967892",
+                                                            "description": "(Required) "
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            "status": "OK",
+                                            "code": 200,
+                                            "_postman_previewlanguage": "json",
+                                            "header": [
+                                                {
+                                                    "key": "Content-Type",
+                                                    "value": "application/json"
+                                                }
+                                            ],
+                                            "cookie": [],
+                                            "responseTime": null,
+                                            "body": "\"fug\""
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Values Put",
+                                    "id": "4fe33118-335d-42c1-9af8-e5f64e47c473",
+                                    "request": {
+                                        "method": "PUT",
+                                        "header": [
+                                            {
+                                                "key": "Content-Type",
+                                                "value": "application/x-www-form-urlencoded"
+                                            }
+                                        ],
+                                        "body": {
+                                            "mode": "urlencoded",
+                                            "urlencoded": [
+                                                {
+                                                    "key": "0",
+                                                    "value": "f"
+                                                },
+                                                {
+                                                    "key": "1",
+                                                    "value": "u"
+                                                },
+                                                {
+                                                    "key": "2",
+                                                    "value": "g"
+                                                }
+                                            ]
+                                        },
+                                        "url": {
+                                            "raw": "{{baseUrl}}/api/Values/:id",
+                                            "host": [
+                                                "{{baseUrl}}"
+                                            ],
+                                            "path": [
+                                                "api",
+                                                "Values",
+                                                ":id"
+                                            ],
+                                            "variable": [
+                                                {
+                                                    "id": "cc90acc6-05c9-4569-9df3-599f321d81f0",
+                                                    "key": "id",
+                                                    "value": "-86967892",
+                                                    "description": "(Required) "
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    "response": [
+                                        {
+                                            "id": "c6f3077f-b0ec-4f13-8f0f-cdabb6301009",
+                                            "name": "No Content",
+                                            "originalRequest": {
+                                                "method": "PUT",
+                                                "header": [],
+                                                "url": {
+                                                    "raw": "{{baseUrl}}/api/Values/:id",
+                                                    "host": [
+                                                        "{{baseUrl}}"
+                                                    ],
+                                                    "path": [
+                                                        "api",
+                                                        "Values",
+                                                        ":id"
+                                                    ],
+                                                    "variable": [
+                                                        {
+                                                            "key": "id",
+                                                            "value": "-86967892",
+                                                            "description": "(Required) "
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            "status": "No Content",
+                                            "code": 204,
+                                            "_postman_previewlanguage": "text",
+                                            "header": [
+                                                {
+                                                    "key": "Content-Type",
+                                                    "value": "text/plain"
+                                                }
+                                            ],
+                                            "cookie": [],
+                                            "responseTime": null,
+                                            "body": ""
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Values Delete",
+                                    "id": "04f175cc-5088-4a88-95da-532de24f511d",
+                                    "request": {
+                                        "method": "DELETE",
+                                        "header": [],
+                                        "url": {
+                                            "raw": "{{baseUrl}}/api/Values/:id",
+                                            "host": [
+                                                "{{baseUrl}}"
+                                            ],
+                                            "path": [
+                                                "api",
+                                                "Values",
+                                                ":id"
+                                            ],
+                                            "variable": [
+                                                {
+                                                    "id": "5aa436c4-3520-40d2-b63a-6f8b31d03fa6",
+                                                    "key": "id",
+                                                    "value": "-86967892",
+                                                    "description": "(Required) "
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    "response": [
+                                        {
+                                            "id": "9e5446a9-e3bb-45ce-bcb4-59cc9667427e",
+                                            "name": "No Content",
+                                            "originalRequest": {
+                                                "method": "DELETE",
+                                                "header": [],
+                                                "url": {
+                                                    "raw": "{{baseUrl}}/api/Values/:id",
+                                                    "host": [
+                                                        "{{baseUrl}}"
+                                                    ],
+                                                    "path": [
+                                                        "api",
+                                                        "Values",
+                                                        ":id"
+                                                    ],
+                                                    "variable": [
+                                                        {
+                                                            "key": "id",
+                                                            "value": "-86967892",
+                                                            "description": "(Required) "
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            "status": "No Content",
+                                            "code": 204,
+                                            "_postman_previewlanguage": "text",
+                                            "header": [
+                                                {
+                                                    "key": "Content-Type",
+                                                    "value": "text/plain"
+                                                }
+                                            ],
+                                            "cookie": [],
+                                            "responseTime": null,
+                                            "body": ""
+                                        }
+                                    ]
+                                }
+                            ],
+                            "id": "13dc32cd-681a-42dc-8c7d-79f496fc622c"
+                        },
+                        {
+                            "name": "Values Get",
+                            "id": "e76cc46d-02f4-4831-a9f5-799f129565d8",
+                            "request": {
+                                "method": "GET",
+                                "header": [],
+                                "url": {
+                                    "raw": "{{baseUrl}}/api/Values",
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "path": [
+                                        "api",
+                                        "Values"
+                                    ]
+                                }
+                            },
+                            "response": [
+                                {
+                                    "id": "7325c1b8-51c8-42b9-822f-0aa340957fdc",
+                                    "name": "OK",
+                                    "originalRequest": {
+                                        "method": "GET",
+                                        "header": [],
+                                        "url": {
+                                            "raw": "{{baseUrl}}/api/Values",
+                                            "host": [
+                                                "{{baseUrl}}"
+                                            ],
+                                            "path": [
+                                                "api",
+                                                "Values"
+                                            ]
+                                        }
+                                    },
+                                    "status": "OK",
+                                    "code": 200,
+                                    "_postman_previewlanguage": "json",
+                                    "header": [
+                                        {
+                                            "key": "Content-Type",
+                                            "value": "application/json"
+                                        }
+                                    ],
+                                    "cookie": [],
+                                    "responseTime": null,
+                                    "body": "[\n \"id\",\n \"aliqua sunt\"\n]"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Values Post",
+                            "id": "fcc37780-1833-4dd6-b348-471da14b2588",
+                            "request": {
+                                "method": "POST",
+                                "header": [
+                                    {
+                                        "key": "Content-Type",
+                                        "value": "application/x-www-form-urlencoded"
+                                    }
+                                ],
+                                "body": {
+                                    "mode": "urlencoded",
+                                    "urlencoded": [
+                                        {
+                                            "key": "0",
+                                            "value": "f"
+                                        },
+                                        {
+                                            "key": "1",
+                                            "value": "u"
+                                        },
+                                        {
+                                            "key": "2",
+                                            "value": "g"
+                                        }
+                                    ]
+                                },
+                                "url": {
+                                    "raw": "{{baseUrl}}/api/Values",
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "path": [
+                                        "api",
+                                        "Values"
+                                    ]
+                                }
+                            },
+                            "response": [
+                                {
+                                    "id": "5fbe0c5d-f629-42b7-a5f8-3506ae13e06c",
+                                    "name": "No Content",
+                                    "originalRequest": {
+                                        "method": "POST",
+                                        "header": [],
+                                        "url": {
+                                            "raw": "{{baseUrl}}/api/Values",
+                                            "host": [
+                                                "{{baseUrl}}"
+                                            ],
+                                            "path": [
+                                                "api",
+                                                "Values"
+                                            ]
+                                        }
+                                    },
+                                    "status": "No Content",
+                                    "code": 204,
+                                    "_postman_previewlanguage": "text",
+                                    "header": [
+                                        {
+                                            "key": "Content-Type",
+                                            "value": "text/plain"
+                                        }
+                                    ],
+                                    "cookie": [],
+                                    "responseTime": null,
+                                    "body": ""
+                                }
+                            ]
+                        }
+                    ],
+                    "id": "3241e847-7448-4e26-a73e-099f57446691"
+                }
+            ],
+            "id": "341f759d-86ca-4e5b-99ed-e270153b83d9"
+        },
+        {
+            "name": "API para recuperar versões cadastradas na webmotors",
+            "id": "b4731122-f430-43da-bccd-494aa996ae2d",
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "{{baseUrl}}/api/OnlineChallenge/Vehicles?Page=",
+                    "host": [
+                        "{{baseUrl}}"
+                    ],
+                    "path": [
+                        "api",
+                        "OnlineChallenge",
+                        "Vehicles"
+                    ],
+                    "query": [
+                        {
+                            "key": "Page",
+                            "value": "",
+                            "description": "(Required) Codigo do Modelo"
+                        }
+                    ]
+                }
+            },
+            "response": []
+        }
+    ],
+    "variable": [
+        {
+            "id": "dede4411-38e3-47f7-9ddc-7e7ed8406028",
+            "key": "baseUrl",
+            "value": "https://desafioonline.webmotors.com.br",
+            "type": "string"
+        }
+    ]
+}
